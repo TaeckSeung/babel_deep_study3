@@ -174,14 +174,14 @@ driver.get('https://nid.naver.com/nidlogin.login')
 
 정상적으로 작동시 새롭게 크롬이 실행되며 네이버 창이 열리게 됩니다.
 
-![Selenium을 통해 실행된 chrome](img/2/naver2.jpg)
+![Selenium을 통해 실행된 chrome](img/2/naver2.JPG)
 
 Selenium또한 CSS 선택자를통해 각 엘리먼트에 접근이 가능합니다.
 이를위해 브라우저 개발도구(F12)를 열어 아이디, 비밀번호의 선택자를 확인합니다.
 
-![](img/2/naver3.jpg)
+![](img/2/naver3.JPG)
 
-![](img/2/naver4.jpg)
+![](img/2/naver4.JPG)
 
 확인결과 아이디와 비밀번호는 각각 name값으로 'id', 'pw'를 가지고 있음을 확인하였습니다.
 또한 로그인 버튼은 btn_clobal이라는 class로 선언되어 있습니다.
@@ -201,16 +201,16 @@ driver.find_element_by_class_name('btn_global').click()
 
 이제 빠른속도로 로그인 폼이 채워지고, 로그인 클릭 이벤트가 발생하면서 로그인이 성공하게 됩니다.
 
-![](img/2/naver5.jpg)
+![](img/2/naver5.JPG)
 
 ### 2-2 Selenium활용한 데이터 스크래핑
 
 Selenium은 BeautifulSoup과 함께사용하여 현재 브라우저상의 데이터를 가져오고,  이를 쉽게 파싱할 수 있습니다.
 쉬운 예시로 네이버 영화에서 어벤져스 시리즈의 제목을 스크래핑 해보도록 하겠습니다.
 
-![](img/2/naver6.jpg)
+![](img/2/naver6.JPG)
 
-![](img/2/naver7.jpg)
+![](img/2/naver7.JPG)
 
 이제 예시로 제목을 수집하기위해, 브라우저 개발툴로 선택자를 확인해둡니다.
 
